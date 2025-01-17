@@ -268,20 +268,43 @@ function Resume() {
 function Photos() {
     let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
 
+    const photos = [
+        {
+            src: image1,
+            alt: 'Laptop keyboard with lines of code on the screen',
+        },
+        {
+            src: image2,
+            alt: 'A bowl of popcorn in front of a TV playing a movie',
+        },
+        {
+            src: image3,
+            alt: 'Pool table with colorful balls spread out',
+        },
+        {
+            src: image4,
+            alt: 'Close-up of an electric guitar being played live',
+        },
+        {
+            src: image5,
+            alt: 'Silhouette of a person at sunset with an airplane in the sky',
+        },
+    ]
+
     return (
         <div className="mt-16 sm:mt-20">
             <div className="-my-4 flex 2xl:justify-center gap-5 overflow-x-auto 2xl:overflow-hidden py-4 sm:gap-8 px-4">
-                {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+                {photos.map((photo, index) => (
                     <div
-                        key={image.src}
+                        key={photo.src.src}
                         className={clsx(
                             'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
-                            rotations[imageIndex % rotations.length]
+                            rotations[index % rotations.length]
                         )}
                     >
                         <Image
-                            src={image}
-                            alt=""
+                            src={photo.src}
+                            alt={photo.alt}
                             sizes="(min-width: 640px) 18rem, 11rem"
                             className="absolute inset-0 h-full w-full object-cover"
                         />
@@ -306,9 +329,9 @@ export default function Home() {
                     </p>
                     <div className="mt-6 flex gap-6">
                         <SocialLink
-                            href="https://www.instagram.com/____dimmy____/"
-                            aria-label="Follow on Instagram"
-                            icon={InstagramIcon}
+                            href="https://www.linkedin.com/in/stefan-dimitrijevic-dev"
+                            aria-label="Follow on LinkedIn"
+                            icon={LinkedInIcon}
                         />
                         <SocialLink
                             href="https://github.com/stefan-dimitrijevic"
@@ -316,9 +339,9 @@ export default function Home() {
                             icon={GitHubIcon}
                         />
                         <SocialLink
-                            href="https://www.linkedin.com/in/stefan-dimitrijevic-dev"
-                            aria-label="Follow on LinkedIn"
-                            icon={LinkedInIcon}
+                            href="https://www.instagram.com/____dimmy____/"
+                            aria-label="Follow on Instagram"
+                            icon={InstagramIcon}
                         />
                     </div>
                 </div>

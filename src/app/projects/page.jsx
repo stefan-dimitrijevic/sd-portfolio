@@ -62,7 +62,7 @@ function LinkIcon(props) {
 
 export const metadata = {
   title: 'Projects',
-  description: 'A showcase of my school projects and development journey.',
+  description: 'Explore a collection of my school projects, showcasing my learning journey and passion for development. Each project highlights my growing skills, problem-solving approach, and the technologies I\'ve explored during my academic experience.'
 }
 
 export default function Projects() {

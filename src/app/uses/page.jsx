@@ -25,7 +25,7 @@ function Tool({ title, href, children }) {
 
 export const metadata = {
   title: 'Uses',
-  description: 'Software I use, gadgets I love, and other tools I recommend.',
+  description: 'From mechanical keyboards to Docker containers, here\'s the hardware and software I lean on daily to stay productive, build engaging software, and keep my workflow smooth.',
 }
 
 export default function Uses() {
