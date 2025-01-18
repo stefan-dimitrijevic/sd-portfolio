@@ -5,6 +5,17 @@ export const metadata = {
     title: 'Page Not Found | 404',
     description:
         'Oops! It seems the page you’re looking for doesn’t exist. Let’s get you back on track.',
+    keywords: [
+        '404',
+        'Page Not Found',
+        'Error Page',
+        'Missing Page',
+        'Stefan Dimitrijević',
+        'Stefan Dimitrijevic',
+        'Go Back Home',
+        'Web Development',
+        'Clean Code',
+    ],
 }
 
 export default function NotFound() {

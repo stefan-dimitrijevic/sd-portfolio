@@ -100,6 +100,7 @@ function Newsletter() {
                     href="https://github.com/stefan-dimitrijevic"
                     variant="secondary"
                     className="w-full"
+                    newTab={true}
                 >
                     Visit GitHub
                 </Button>

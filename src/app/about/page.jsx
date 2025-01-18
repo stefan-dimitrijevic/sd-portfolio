@@ -43,6 +43,18 @@ export const metadata = {
     title: 'About',
     description:
         'Discover who Stefan is, how he balances projects at Datablooz and Getafeel, and why he loves turning ideas into reality. From billiards to code, get a glimpse into the passions that fuel his creativity.',
+    keywords: [
+        'Stefan Dimitrijević',
+        'Stefan Dimitrijevic',
+        'Full Stack Developer',
+        'Web Development',
+        'Problem-Solving',
+        'Datablooz',
+        'Getafeel',
+        'Quantox',
+        'Clean Code',
+        'Personal Portfolio',
+    ],
 }
 
 export default function About() {
