@@ -223,7 +223,8 @@ function Resume() {
                     <li key={roleIndex} className="flex gap-4">
                         <div
                             className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                            <Image src={role.logo} alt={`${role.company} logo`} className="h-7 w-7 rounded-full" unoptimized/>
+                            <Image src={role.logo} alt={`${role.company} logo`} className="h-7 w-7 rounded-full"
+                                   unoptimized/>
                         </div>
                         <dl className="flex flex-auto flex-wrap gap-x-2">
                             <dt className="sr-only">Company</dt>
@@ -294,12 +295,12 @@ function Photos() {
 
     return (
         <div className="mt-16 sm:mt-20">
-            <div className="-my-4 flex 2xl:justify-center gap-5 overflow-x-auto 2xl:overflow-hidden py-4 sm:gap-8 px-4">
+            <div className="-my-4 flex gap-5 overflow-x-auto px-4 py-4 sm:gap-8 lg:justify-center lg:overflow-x-hidden">
                 {photos.map((photo, index) => (
                     <div
                         key={photo.src.src}
                         className={clsx(
-                            'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
+                            'relative aspect-[9/10] flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:rounded-2xl w-44 md:w-48 lg:w-44 xl:w-56 2xl:w-64 3xl:w-72',
                             rotations[index % rotations.length]
                         )}
                     >
