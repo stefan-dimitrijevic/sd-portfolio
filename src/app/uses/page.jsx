@@ -25,7 +25,7 @@ function Tool({title, href, children}) {
 
 export const metadata = {
     title: 'Uses',
-    description: 'From mechanical keyboards to Docker containers, here\'s the hardware and software I lean on daily to stay productive, build engaging software, and keep my workflow smooth.',
+    description: 'Stefan Dimitrijević\'s daily tools for productivity and development—from mechanical keyboards to Docker, IDEs, and workflow essentials.',
     keywords: [
         'Stefan Dimitrijević',
         'Stefan Dimitrijevic',

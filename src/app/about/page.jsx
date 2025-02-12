@@ -42,7 +42,7 @@ function MailIcon(props) {
 export const metadata = {
     title: 'About',
     description:
-        'Discover who Stefan is, how he balances projects at Datablooz and Getafeel, and why he loves turning ideas into reality. From billiards to code, get a glimpse into the passions that fuel his creativity.',
+        'Learn about Stefan Dimitrijević—his journey as a Full Stack Developer, his work at Datablooz and Getafeel, and his passion for building and problem-solving.',
     keywords: [
         'Stefan Dimitrijević',
         'Stefan Dimitrijevic',
