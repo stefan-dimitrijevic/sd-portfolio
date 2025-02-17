@@ -243,7 +243,7 @@ function Resume() {
                 dark:ring-0
               "
                         >
-                            <a
+                            <Link
                                 href={role.website}
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -254,19 +254,19 @@ function Resume() {
                                     className="h-7 w-7 rounded-full"
                                     unoptimized
                                 />
-                            </a>
+                            </Link>
                         </div>
                         <dl className="flex flex-auto flex-wrap gap-x-2">
                             <dt className="sr-only">Company</dt>
                             <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                                <a
+                                <Link
                                     href={role.website}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="hover:underline"
                                 >
                                     {role.company}
-                                </a>
+                                </Link>
                             </dd>
                             <dt className="sr-only">Role</dt>
                             <dd className="text-xs text-zinc-500 dark:text-zinc-400">
