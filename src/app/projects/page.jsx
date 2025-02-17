@@ -62,7 +62,7 @@ function LinkIcon(props) {
 
 export const metadata = {
     title: 'Projects',
-    description: 'Explore Stefan Dimitrijević\'s projects. Discover his journey in web development, problem-solving, and innovative tech solutions.',
+    description: 'Explore Stefan Dimitrijević’s projects. Discover his journey in web development, problem-solving, and innovative tech solutions.',
     keywords: [
         'Stefan Dimitrijević',
         'Stefan Dimitrijevic',

@@ -25,7 +25,7 @@ function Tool({title, href, children}) {
 
 export const metadata = {
     title: 'Uses',
-    description: 'Stefan Dimitrijević\'s daily tools for productivity and development—from mechanical keyboards to Docker, IDEs, and workflow essentials.',
+    description: 'Stefan Dimitrijević’s daily tools for productivity and development—from mechanical keyboards to Docker, IDEs, and workflow essentials.',
     keywords: [
         'Stefan Dimitrijević',
         'Stefan Dimitrijevic',

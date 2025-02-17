@@ -12,7 +12,7 @@ export const metadata = {
             'Stefan Dimitrijević - Full Stack Developer & Problem-Solver',
     },
     description:
-        'I\'m Stefan Dimitrijević, a Full Stack developer passionate about crafting web apps, solving tough problems, and exploring new technologies.',
+        'I’m Stefan Dimitrijević, a Full Stack developer passionate about crafting web apps, solving tough problems, and exploring new technologies.',
     keywords: [
         'Full Stack Developer',
         'Web Development',
