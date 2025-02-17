@@ -11,21 +11,21 @@ import {
 import portraitImage from '@/images/portrait.jpg'
 
 function SocialLink({className, href, children, icon: Icon}) {
-    const isMailtoLink = href.startsWith('mailto:');
+    const isMailtoLink = href.startsWith('mailto:')
 
     return (
         <li className={clsx(className, 'flex')}>
             <Link
                 href={href}
-                target={isMailtoLink ? undefined : "_blank"}
-                rel={isMailtoLink ? undefined : "noopener noreferrer"}
+                target={isMailtoLink ? undefined : '_blank'}
+                rel={isMailtoLink ? undefined : 'noopener noreferrer'}
                 className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
             >
                 <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500"/>
                 <span className="ml-4">{children}</span>
             </Link>
         </li>
-    );
+    )
 }
 
 function MailIcon(props) {
@@ -71,6 +71,7 @@ export default function About() {
                         />
                     </div>
                 </div>
+
                 <div className="lg:order-first lg:row-span-2">
                     <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                         I’m Stefan Dimitrijević. I live in Serbia, where I turn ideas into code.
@@ -78,29 +79,73 @@ export default function About() {
                     <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
                         <p>
                             I’m a Full Stack Developer with a passion for solving complex problems and delivering
-                            innovative, user-friendly solutions. Right now, I’m balancing the exciting challenges of
-                            working simultaneously for two
-                            companies: <strong>Getafeel</strong> and <strong>Datablooz</strong>.
+                            innovative, user-friendly solutions. Right now, I’m balancing the exciting challenges
+                            of working simultaneously for two companies:{' '}
+                            <Link
+                                href="https://getafeel.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:underline"
+                            >
+                                <strong>Getafeel</strong>
+                            </Link>{' '}
+                            and{' '}
+                            <Link
+                                href="https://www.datablooz.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:underline"
+                            >
+                                <strong>Datablooz</strong>
+                            </Link>
+                            .
                         </p>
                         <p>
-                            At <strong>Datablooz</strong>, I’m developing a React Native mobile application called <em>Delta
-                            Sapiens</em> and contributing to an internal tool for AI opportunity mapping, focusing on
-                            innovative and efficient solutions. Meanwhile, at <strong>Getafeel</strong>, I’m working on
-                            creating immersive experiences for virtual tours and property navigation systems using
-                            modern frameworks and technologies. Previously, I worked as a back-end developer
-                            at <strong>Quantox</strong>, where I enhanced and maintained large-scale web applications,
-                            ensuring optimal performance and reliability in dynamic environments..
+                            At{' '}
+                            <Link
+                                href="https://www.datablooz.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:underline"
+                            >
+                                <strong>Datablooz</strong>
+                            </Link>
+                            , I’m developing a React Native mobile application called <em>Delta Sapiens</em> and
+                            contributing to an internal tool for AI opportunity mapping, focusing on innovative
+                            and efficient solutions. Meanwhile, at{' '}
+                            <Link
+                                href="https://getafeel.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:underline"
+                            >
+                                <strong>Getafeel</strong>
+                            </Link>
+                            , I’m working on creating immersive experiences for virtual tours and property
+                            navigation systems using modern frameworks and technologies. Previously, I worked as a
+                            back-end developer at{' '}
+                            <Link
+                                href="https://www.quantox.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:underline"
+                            >
+                                <strong>Quantox</strong>
+                            </Link>
+                            , where I enhanced and maintained large-scale web applications, ensuring optimal
+                            performance and reliability in dynamic environments.
                         </p>
                         <p>
-                            My journey in development started with curiosity and a love for technology, and over the
-                            years, I’ve honed my skills in backend, frontend, and full-stack development. From creating
-                            a fun educational website for an imaginary billiards school to enhancing large-scale web
-                            applications, I’ve always enjoyed taking on challenges and finding creative solutions.
+                            My journey in development started with curiosity and a love for technology, and over
+                            the years, I’ve honed my skills in backend, frontend, and full-stack development. From
+                            creating a fun educational website for an imaginary billiards school to enhancing
+                            large-scale web applications, I’ve always enjoyed taking on challenges and finding
+                            creative solutions.
                         </p>
                         <p>
-                            When I’m not coding, I’m probably playing billiards, strumming my guitar, planning a trip,
-                            or binge-watching my favorite movies. I believe in the power of hobbies to fuel creativity
-                            and keep life exciting.
+                            When I’m not coding, I’m probably playing billiards, strumming my guitar, planning a
+                            trip, or binge-watching my favorite movies. I believe in the power of hobbies to fuel
+                            creativity and keep life exciting.
                         </p>
                         <p>
                             I’m fluent in Serbian (native speaker) and English (professional level), which helps me
@@ -108,6 +153,7 @@ export default function About() {
                         </p>
                     </div>
                 </div>
+
                 <div className="lg:pl-20">
                     <ul role="list">
                         <SocialLink
