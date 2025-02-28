@@ -7,6 +7,7 @@ import {
     GitHubIcon,
     InstagramIcon,
     LinkedInIcon,
+    XIcon,
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
 
@@ -161,7 +162,7 @@ export default function About() {
                             icon={LinkedInIcon}
                             className="mt-4"
                         >
-                            Connect on LinkedIn
+                            Follow on LinkedIn
                         </SocialLink>
                         <SocialLink
                             href="https://github.com/stefan-dimitrijevic"
@@ -176,6 +177,13 @@ export default function About() {
                             className="mt-4"
                         >
                             Follow on Instagram
+                        </SocialLink>
+                        <SocialLink
+                            href="https://x.com/stefan_dimi_dev"
+                            icon={XIcon}
+                            className="mt-4"
+                        >
+                            Follow on X
                         </SocialLink>
                         <SocialLink
                             href="mailto:stefandimitrijevicdev@gmail.com"

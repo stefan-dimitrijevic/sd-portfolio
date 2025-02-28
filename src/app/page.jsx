@@ -8,6 +8,7 @@ import {
     GitHubIcon,
     InstagramIcon,
     LinkedInIcon,
+    XIcon
 } from '@/components/SocialIcons'
 import logoDatablooz from '@/images/logos/datablooz.jpg'
 import logoGetafeel from '@/images/logos/getafeel.jpg'
@@ -386,6 +387,11 @@ export default function Home() {
                             href="https://www.instagram.com/____dimmy____/"
                             aria-label="Follow on Instagram"
                             icon={InstagramIcon}
+                        />
+                        <SocialLink
+                            href="https://x.com/stefan_dimi_dev"
+                            aria-label="Follow on X"
+                            icon={XIcon}
                         />
                     </div>
                 </div>
